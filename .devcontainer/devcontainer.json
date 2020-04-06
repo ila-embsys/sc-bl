@@ -1,0 +1,15 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+{
+	// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+	"name": "RISCV",
+
+	"dockerFile": "Dockerfile",
+	// Add the IDs of any extensions you want installed in the array below.
+	"extensions": [
+		"ms-vscode.cpptools",
+		"webfreak.debug"
+	],
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+}

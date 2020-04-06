@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+        "name": "GDB RISCV",
+        "type": "gdb",
+        "request": "launch",
+        "cwd": "${workspaceRoot}",
+        "target": "${workspaceRoot}/build.de10lite_scr1/scbl.elf",
+        "gdbpath" : "riscv64-elf-gdb",
+        "autorun": [
+            "target remote host.docker.internal:50000",
+            "file ./build.de10lite_scr1/scbl.elf",
+            "load"
+            ]
+        },
+    ]
+}
